@@ -317,12 +317,14 @@ span {
     margin-bottom: 3rem;
 }
 
-.contact form .input-box {
+form .input-box {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
+.input-box .input-field {
+    width: 49%;
+}
 .contact form .input-box input, 
 .contact form textarea {
     width: 100%;
@@ -333,11 +335,6 @@ span {
     border-radius: .8rem;
     margin: .7rem 0;
 }
-
-.contact form .input-box input {
-    width: 49%;
-}
-
 .contact form textarea {
     resize: none;
 }
@@ -345,6 +342,18 @@ span {
 .contact form .btn {
     margin-top: 2rem;
     cursor: pointer;
+}
+
+.field .error-text {
+    font-size: 14.5px;
+    color: #d93025;
+    text-align: center;
+    margin: -5px 0 10px;
+    display: none;
+}
+
+.field.error .error-text {
+    display: block;
 }
 
 .footer {
